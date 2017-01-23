@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO">
+	<Appenders>
+		<!-- <File name="file" fileName="C:/Users/xxxxx/kalaComp-temp.log"> -->
+		<File name="file" fileName="kalahari.log"> 
+			<PatternLayout>
+				<!-- <Pattern>%d %p %c{1.} [%t] %m %ex%n</Pattern> -->
+				<Pattern>%d %p [%t] (%F:%L) %m %ex%n</Pattern>
+			</PatternLayout>
+		</File>
+		<Console name="STDOUT" target="SYSTEM_OUT">
+			<PatternLayout pattern="%m%n" />
+		</Console>
+	</Appenders>
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="file" level="info" />
+			<AppenderRef ref="STDOUT" level="OFF" />
+		</Root>
+	</Loggers>
+</Configuration>
