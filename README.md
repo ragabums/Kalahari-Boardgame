@@ -1,5 +1,5 @@
 # Kalahari
-__Kalaha (Mancala) Game and Computer Opponen__
+__Kalaha (Mancala) game including simple Console Client and Computer Opponent__
 
 Keywords: Kalaha, Mancala, board game, artificial intelligence, two-player zero-sum game, Minmax algorithm, Alpha-beta pruning
 
